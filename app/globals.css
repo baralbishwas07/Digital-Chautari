@@ -41,3 +41,69 @@
   --transition-slow: 0.45s ease;
   --transition-fast: 0.15s ease;
 }
+
+/* ---- BASE STYLES -------------------------------------- */
+
+body {
+  @apply font-body text-base text-ink bg-paper antialiased;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-heading leading-tight text-ink;
+}
+
+h1 {
+  @apply text-[46px] font-extrabold;
+  line-height: 1.15;
+}
+
+h2 {
+  @apply text-[30px] font-bold;
+}
+
+h3 {
+  @apply text-[17px] font-semibold;
+}
+
+/* ---- FOCUS STYLES ------------------------------------- */
+:focus-visible {
+  @apply outline-2 outline-primary outline-offset-2;
+}
+
+::selection {
+  @apply bg-primary text-white;
+}
+
+/* ---- GRADIENT TEXT --------------------------------------- */
+.gradient-text {
+  background: linear-gradient(90deg, #0f9488, #e0a930, #7fae3a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ---- REDUCED MOTION ------------------------------------------ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* ---- RESPONSIVE H1 ---------------------------------------------- */
+@media (max-width: 760px) {
+  h1 {
+    @apply text-[32px];
+  }
+}
