@@ -1,2 +1,43 @@
 @import "tailwindcss";
 
+/* Design Tokens - Digital Chautari */
+
+@theme {
+  /* ----Colors-------------------------------------*/
+  --color-primary: #0f9488;
+  --color-primary-dark: #0b6f66;
+  --color-accent-gold: #e0a930;
+  --color-accent-green: #7fae3a;
+  --color-ink: #101826;
+  --color-navy: #0b1220;
+  --color-navy-card: #101d2b;
+  --color-navy-border: #223140;
+  --color-paper: #fbfbf9;
+  --color-line: #e7e5df;
+  --color-muted: #5b6472;
+
+  /* Pastel icon-chip backgrounds */
+  --color-pastel-mint: #e7f5ea;
+  --color-pastel-teal: #e7f2f4;
+  --color-pastel-gold: #fdf1de;
+  --color-pastel-lilac: #f4e9f6;
+  --color-pastel-pink: #fdeef0;
+
+  /* ----Typography---------------------------------*/
+  --font-heading: "Sora", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* ----Border Radius---------------------------------*/
+  --radius-icon: 10px;
+  --radius-card: 12px;
+  --radius-pill: 20px;
+  --radius-button: 8px;
+
+  /* ----Shadows---------------------------------------*/
+  --shadow-card-hover: 0 16px 30px -18px rgba(16, 24, 38, 0.2);
+
+  /* ----Transitions-----------------------------------*/
+  --transition-base: 0.3s ease;
+  --transition-slow: 0.45s ease;
+  --transition-fast: 0.15s ease;
+}
