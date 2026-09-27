@@ -24,8 +24,8 @@
   --color-pastel-pink: #fdeef0;
 
   /* ----Typography---------------------------------*/
-  --font-heading: "Sora", sans-serif;
-  --font-body: "Inter", sans-serif;
+  --font-heading: var(--font-sora);
+  --font-body: var(--font-inter);
 
   /* ----Border Radius---------------------------------*/
   --radius-icon: 10px;
