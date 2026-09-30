@@ -18,10 +18,25 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Digital Chautari - Creative Technology Company",
-  template: "%s | Digital Chautari",
+  title: {
+    default: "Digital Chautari — Creative Technology Company",
+    template: "%s | Digital Chautari",
+  },
   description:
     "A creative technology company in Kathmandu, Nepal, offering digital marketing, content creation, and health-tech software.",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://digitalchautari.onrender.com",
+    siteName: "Digital Chautari",
+    title: "Digital Chautari — Creative Technology Company",
+    description: "Building digital bridges between ideas and impact.",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Digital Chautari — Creative Technology Company",
+    description: "Building digital bridges between ideas and impact.",
+  },
 };
 
 export default function RootLayout({ children }) {
