@@ -27,7 +27,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://digitalchautari.onrender.com",
+    url: "https://digital-chautari-alpha.vercel.app",
     siteName: "Digital Chautari",
     title: "Digital Chautari — Creative Technology Company",
     description: "Building digital bridges between ideas and impact.",
