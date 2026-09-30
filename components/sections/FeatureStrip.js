@@ -1,5 +1,6 @@
 import Card from "@/components/ui/Card";
 import IconChip from "@/components/ui/IconChip";
+import ScrollReveal from "@/components/ui/ScrollReveal";
 import { TrendingUp, Palette, Zap, Handshake } from "lucide-react";
 
 const features = [
@@ -35,13 +36,15 @@ export default function FeatureStrip() {
       <div className="mx-auto max-w-[1120px] px-10 max-[760px]:px-[22px]">
         <div className="grid grid-cols-4 gap-5 max-[1024px]:grid-cols-2 max-[760px]:grid-cols-1">
           {features.map((f, i) => (
-            <Card key={i}>
-              <IconChip icon={f.icon} index={i} />
-              <h3 className="mt-4 mb-2">{f.title}</h3>
-              <p className="text-muted text-[13px] leading-relaxed">
-                {f.description}
-              </p>
-            </Card>
+            <ScrollReveal key={i} delay={i * 70}>
+              <Card>
+                <IconChip icon={f.icon} index={i} />
+                <h3 className="mt-4 mb-2">{f.title}</h3>
+                <p className="text-muted text-[13px] leading-relaxed">
+                  {f.description}
+                </p>
+              </Card>
+            </ScrollReveal>
           ))}
         </div>
       </div>

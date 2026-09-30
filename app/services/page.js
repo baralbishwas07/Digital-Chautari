@@ -202,11 +202,11 @@ export default function ServicesPage() {
             title="Simple, transparent pricing"
             description="Choose the plan that fits your business. No hidden fees."
           />
-          <div className="grid grid-cols-3 gap-5 items-start max-[760px]:grid-cols-1">
+          <div className="grid grid-cols-3 gap-5 items-stretch max-[760px]:grid-cols-1">
             {pricingTiers.map((tier, i) => (
               <div
                 key={i}
-                className={`relative rounded-card p-8 text-center ${tier.highlighted ? "bg-navy border border-navy-border text-white scale-105 max-[760px]:scale-100" : "bg-white border border-line"}`}
+                className={`relative h-full rounded-card p-8 text-center ${tier.highlighted ? "bg-navy border border-navy-border text-white scale-105 max-[760px]:scale-100" : "bg-white border border-line"}`}
               >
                 {tier.badge && (
                   <span className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-accent-gold text-ink text-xs font-semibold rounded-pill uppercase tracking-[0.02em] whitespace-nowrap">

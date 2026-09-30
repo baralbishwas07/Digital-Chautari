@@ -5,7 +5,7 @@ export default function Card({
   className = "",
   ...props
 }) {
-  const base = "p-6 rounded-card transition-all duration-300";
+  const base = "p-6 rounded-card transition-all duration-300 h-full";
   const variantStyles =
     variant === "dark"
       ? "bg-navy-card border border-navy-border"

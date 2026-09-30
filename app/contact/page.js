@@ -146,11 +146,11 @@ export default function ContactPage() {
             {departments.map((dept, i) => (
               <Card key={i} className="flex items-center gap-4">
                 <IconChip icon={dept.icon} index={i} />
-                <div>
+                <div className="min-w-0">
                   <h3 className="text-[15px]">{dept.title}</h3>
                   <a
                     href={`mailto:${dept.email}`}
-                    className="text-[13px] text-primary hover:text-primary-dark transition-colors"
+                    className="block truncate text-[13px] text-primary hover:text-primary-dark transition-colors"
                   >
                     {dept.email}
                   </a>
