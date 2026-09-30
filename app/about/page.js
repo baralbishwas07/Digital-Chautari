@@ -139,7 +139,7 @@ const roadmap = [
 
 export default function AboutPage() {
   return (
-    <main>
+    <main id="main-content">
       {/* 1. Hero */}
       <section className="bg-gradient-to-b from-pastel-mint to-paper pt-[84px] pb-12 text-center">
         <div className="mx-auto max-w-[720px] px-10 max-[760px]:px-[22px]">

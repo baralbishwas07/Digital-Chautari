@@ -11,7 +11,7 @@ import ClosingCTA from "@/components/sections/ClosingCTA";
 
 export default function Home() {
   return (
-    <main>
+    <main id="main-content">
       <HeroSection />
       <FeatureStrip />
       <WhoWeAre />
