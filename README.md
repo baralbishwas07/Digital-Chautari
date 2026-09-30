@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Digital Chautari
 
-## Getting Started
+A Next.js web application for Digital Chautari, built with Next.js 16 (App Router), React 19, and Tailwind CSS v4.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 📂 Project Structure
+
+```text
+Digital-Chautari/
+├── app/                              # Next.js App Router pages & layouts
+│   ├── about/page.js                 # About page (/about)
+│   ├── contact/page.js               # Contact page (/contact)
+│   ├── products/page.js              # Products page (/products)
+│   ├── services/page.js              # Services & pricing page (/services)
+│   ├── globals.css                   # Global styles & Tailwind v4 design tokens
+│   ├── layout.js                     # Root layout (Header, Footer, Fonts)
+│   └── page.js                       # Home landing page (/)
+├── components/                       # React components
+│   ├── layout/                       # Header, mobile navigation, and Footer
+│   │   ├── Header.js
+│   │   └── Footer.js
+│   ├── sections/                     # Landing & page section components
+│   │   ├── HeroSection.js
+│   │   ├── WhoWeAre.js
+│   │   ├── ProductsTeaser.js
+│   │   ├── SectorsSection.js
+│   │   ├── ProcessSection.js
+│   │   ├── TestimonialsSection.js
+│   │   ├── DarkStatsBanner.js
+│   │   ├── FeatureStrip.js
+│   │   ├── BlogTeaser.js
+│   │   └── ClosingCTA.js
+│   └── ui/                           # Reusable UI primitives
+│       ├── Button.js
+│       ├── Card.js
+│       ├── IconChip.js
+│       ├── ScrollReveal.js
+│       ├── SectionHeader.js
+│       └── StatBar.js
+├── lib/
+│   └── constants.js                  # Navigation links and site configuration
+├── public/                           # Static assets
+├── package.json                      # Dependencies & scripts
+└── next.config.mjs                   # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🚀 Getting Started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Prerequisites
 
-## Learn More
+Ensure you have the following installed on your system:
+- **Node.js**: `v18.18.0` or higher (Node 20+ recommended)
+- **npm** (comes with Node.js) or **pnpm** / **yarn**
 
-To learn more about Next.js, take a look at the following resources:
+To check your installed versions:
+```bash
+node -v
+npm -v
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Installation & Setup
 
-## Deploy on Vercel
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/baralbishwas07/Digital-Chautari.git
+   cd Digital-Chautari
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Open in your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to view the application.
+
+---
+
+## 📜 Available Scripts
+
+| Command | Description |
+|---|---|
+| `npm run dev` | Runs the local development server at `localhost:3000` with hot reloading |
+| `npm run build` | Builds an optimized production bundle |
+| `npm run start` | Starts the production server (after running `npm run build`) |
+| `npm run lint` | Runs ESLint to check for code issues and lint errors |
